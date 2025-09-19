@@ -4,8 +4,11 @@ package org.mossimo;
 
 public class Main {
     public static void main(String[] args) {
-        String address = "www.GooGle.com";
+        String address = "   www.GooGle.com  ";
         System.out.println(address.toLowerCase()); //makes new string into lower case
+
+        address = address.trim(); //trims all space from beginning and end
+        System.out.println(address);
 
         int dotIdx = address.indexOf('.'); //finds first dot
         int dotIdx2 = address.lastIndexOf('.'); //finds first dot from the end
