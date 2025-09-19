@@ -4,7 +4,8 @@ package org.mossimo;
 
 public class Main {
     public static void main(String[] args) {
-        String address = "www.google.com";
+        String address = "www.GooGle.com";
+        System.out.println(address.toLowerCase()); //makes new string into lower case
 
         int dotIdx = address.indexOf('.'); //finds first dot
         int dotIdx2 = address.lastIndexOf('.'); //finds first dot from the end
