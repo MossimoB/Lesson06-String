@@ -10,6 +10,11 @@ public class Main {
         address = address.trim(); //trims all space from beginning and end
         System.out.println(address);
 
+        System.out.println(address.isEmpty()); //returns false because string is not empty
+        //empty string looks like ""
+        System.out.println(address.isBlank()); //returns false because string is not blank
+        //blank string is "" or "    "
+
         int dotIdx = address.indexOf('.'); //finds first dot
         int dotIdx2 = address.lastIndexOf('.'); //finds first dot from the end
         String company = address.substring(dotIdx + 1, dotIdx2); //variable holds everything between both dots
